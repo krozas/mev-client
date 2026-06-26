@@ -27,6 +27,8 @@ const getColumns = (
       key: "nombres",
       title: "Nombres",
       dataIndex: "nombres",
+      
+      sorter: (a, b) => a.nombres.localeCompare(b.nombres),
       width: "400px",
     },
     {
@@ -35,6 +37,8 @@ const getColumns = (
       dataIndex: "apellidos",
       align: "center",
       width: "150px",
+      
+      sorter: (a, b) => a.apellidos.localeCompare(b.apellidos),
     },
     {
       key: "cuit",

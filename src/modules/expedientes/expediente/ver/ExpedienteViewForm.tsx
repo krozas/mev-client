@@ -13,9 +13,7 @@ interface Props {
 export default function ExpedienteViewForm({
   expediente,
   afterAccion,
-}: Readonly<Props>) {
-  console.log("🚀 ~ ExpedienteViewForm ~ expediente:", expediente);
-
+}: Readonly<Props>) { 
   return (
     <>
       <Space direction="vertical" style={{ display: "flex" }}>

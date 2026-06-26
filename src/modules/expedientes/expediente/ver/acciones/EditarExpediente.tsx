@@ -51,8 +51,7 @@ export default function EditarExpediente({
       }
       const personasExpe = await request(`/api/expediente/personas`, {
         idExpediente: input?.id,
-      });
-      console.log("🚀 ~ buscarPersonas ~ personasExpe:", personasExpe)
+      }); 
        if (personasExpe) {
         form.setFieldValue("personas", 
           personasExpe.map((p: any) => ({

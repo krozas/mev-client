@@ -3,7 +3,7 @@
 # 🌐 Frontend con Vite + React + Ant Design + TypeScript
 
 Este proyecto es una aplicación frontend creada con **Vite**, utilizando **React**, **Ant Design (antd)** para la UI y **TypeScript** para proporcionar tipado estático y mayor robustez en el desarrollo.
-Proyecto para MEV. Concurso Programador/a de Aplicaciones Informáticas Senior MF6 
+Proyecto para MEV. Concurso Programador/a de Aplicaciones Informáticas Senior MF7 
  
 ---
 
@@ -44,7 +44,7 @@ project/
 ## 📦 Instalación
 
 Clonar el repositorio e instalar dependencias:
-git clone https://github.com/dgi-mev/dgi-mev-client.git
+git clone https://github.com/krozas/mev-client.git
 
 ```bash
 npm install
@@ -59,7 +59,7 @@ npm run dev
 Luego abre:
 
 ```
-http://localhost:9001
+http://localhost:9001/mev-client
 ```
 
 ---

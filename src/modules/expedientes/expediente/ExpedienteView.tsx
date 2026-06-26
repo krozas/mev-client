@@ -25,6 +25,7 @@ const getColumns = (afterCrud: () => void): ColumnsType<ExpedienteDTO> => {
       title: "Expediente",
       dataIndex: "claveExpediente",
       width: "400px",
+      sorter: (a, b) => a.numero-b.numero ,//.localeCompare(b.claveExpediente),
       render: (_, item) => {
         return <BtnExpediente item={item} />;
       },
@@ -35,6 +36,8 @@ const getColumns = (afterCrud: () => void): ColumnsType<ExpedienteDTO> => {
       dataIndex: "caratula",
       align: "center",
       width: "300px",
+
+      sorter: (a, b) => a.caratula.localeCompare(b.caratula),
     },
     {
       key: "acciones",
@@ -88,7 +91,12 @@ export default function ExpedientesView() {
           />
         </Button>
       </div>
-      <Table<ExpedienteDTO> columns={columns} dataSource={data} rowKey="id" />
+      <Table<ExpedienteDTO>
+        columns={columns}
+        dataSource={data}
+        rowKey="id"
+        showSorterTooltip={{ target: "sorter-icon" }}
+      />
     </>
   );
 }
