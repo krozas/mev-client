@@ -1,0 +1,24 @@
+.custom-tabs {
+  .ant-tabs-content-holder {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+    .ant-tabs-content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+
+    .ant-tabs-tabpane {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  }
+
+  .ant-tabs-nav .ant-tabs-nav-wrap .ant-tabs-nav-list .ant-tabs-tab {
+    padding: 8px 24px;
+    margin: 0px 0px 0px 4px;
+  }
+}

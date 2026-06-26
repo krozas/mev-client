@@ -1,0 +1,27 @@
+/*TODO no hardcodear los colores, usar type success como en color-variant*/
+.custom-controlar-dropdown-button {
+
+    .ant-btn {
+        background-color: green !important;
+        color: #ffffff !important;
+    }
+
+    .ant-btn:hover {
+        background-color: #00aa00 !important;
+        color: white !important;
+        border-color: #00aa00 !important;
+    }
+}
+
+.custom-verificar-dropdown-button {
+
+    .ant-btn {
+        border-color: green !important;
+        color: green !important;
+    }
+
+    .ant-btn:hover {
+        border-color: #00aa00 !important;
+        color: #00aa00 !important;
+    }
+}

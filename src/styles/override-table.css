@@ -1,0 +1,57 @@
+/*ORIGINAL .custom-table {
+  height: 100%;
+  overflow: hidden;
+
+  .ant-spin-nested-loading {
+    height: 100%;
+
+    .ant-spin-container {
+      height: 100%;
+
+      .ant-table {
+        max-height: 90%;
+        overflow: auto;
+      }
+    }
+  }
+}*/
+
+/*
+Funciona con la prop scroll={{ y: `Xpx` }} y se sobreescribe con estas clases*/ 
+/*.custom-table {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+
+  .ant-spin-nested-loading {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+    .ant-spin-container {
+      display: flex;
+      flex-direction: column;
+      flex: auto;
+
+      .ant-table {
+        display: flex;
+        flex-direction: column;
+        flex: auto;
+
+        .ant-table-container {
+          display: flex;
+          flex-direction: column;
+          flex: auto;
+
+          .ant-table-body {
+            overflow: auto !important;
+            max-height: unset !important;
+            display: flex;
+            flex-direction: column;
+            flex: auto;
+          }
+        }
+      }
+    }
+  }
+}*/

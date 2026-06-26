@@ -1,0 +1,65 @@
+/*Estilo básico para el drawer*/
+.drawerContentDefault {
+  width: 50vw !important;
+}
+
+@media (max-width: 1500px) {
+  .drawerContentDefault {
+    width: 45vw !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .drawerContentDefault {
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .drawerContentDefault {
+    width: 60vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .drawerContentDefault {
+    width: 70vw !important;
+  }
+}
+
+/*Estilo para drawer con editor de texto*/
+.textEditorDrawer {
+  width: 45vw !important;
+}
+
+@media (max-width: 1600px) {
+  .textEditorDrawer {
+    width: 50vw !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .textEditorDrawer {
+    width: 60vw !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .textEditorDrawer {
+    width: 70vw !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .textEditorDrawer {
+    width: 90vw !important;
+  }
+}
+
+
+/*Ancho default en pantallas chicas*/
+@media (max-width: 700px) {
+  .contentMinWidth {
+    width: 100vw !important;
+  }
+}

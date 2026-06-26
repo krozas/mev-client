@@ -1,0 +1,9 @@
+.custom-collapse {
+  .ant-collapse-header {
+    padding: 0 !important;
+    padding-left: 0px !important;
+  }
+  .ant-collapse-content-box {
+    padding: 0px 0px 12px 0px !important;
+  }
+}

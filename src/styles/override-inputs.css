@@ -1,0 +1,3 @@
+.custom-input-disabled {
+  color: black !important; /*Sobreescribe el color del texto en disabled*/
+}

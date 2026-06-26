@@ -1,0 +1,119 @@
+@import "@styles/base-drawer.css";
+@import "@styles/override-form.css";
+@import "@styles/override-tabs.css";
+@import "@styles/override-inputs.css";
+@import "@styles/color-variants.css";
+@import "@styles/override-dropdown-btn.css";
+@import "@styles/override-collapse.css";
+@import "@styles/override-layout.css";
+@import "@styles/animations.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it covers the full viewport height*/
+}
+
+.vertical-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+h1,
+.h1 {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h2,
+.h2 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h4,
+.h4 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h5,
+.h5 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.container-layout {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-search-label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.icon-small {
+  font-size: 25px !important;
+}
+
+.icon-middle {
+  font-size: 35px !important;
+}
+
+.icon-large {
+  font-size: 45px !important;
+}
+
+.texto-small {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.texto-middle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.texto-large {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.wrap-texto-button {
+  text-align: start;
+  white-space: normal;
+  height: auto;
+}

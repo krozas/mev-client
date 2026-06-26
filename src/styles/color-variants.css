@@ -1,0 +1,91 @@
+/* ---- base classes ---- */
+.primary {
+  background-color: #1890ff;
+  color: white;
+}
+
+.success,
+.success.ant-btn-primary {
+  background-color: green;
+  color: white;
+}
+
+.success.ant-btn-default {
+  border-color: green;
+  color: green;
+  background-color: inherit;
+}
+
+.warning,
+.warning.ant-btn-primary {
+  background-color: #faad14;
+  color: black;
+}
+
+.warning.ant-btn-default {
+  border-color: #faad14;
+  color: #faad14;
+  background-color: inherit;
+}
+
+.error {
+  background-color: #f5222d;
+  color: white;
+}
+
+.blackBtn {
+  background-color: black;
+  color: white;
+}
+
+.grayBtn {
+  background-color: gray;
+  color: white;
+}
+
+/* ---- hover classes---- */
+/*TODO: Sobreescribir ant-btn-[dashed | link | text]*/
+.enable-hover.primary:hover {
+  background-color: #4096ff;
+  cursor: pointer;
+}
+
+.enable-hover.success:hover,
+.enable-hover.success.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #00aa00;
+  cursor: pointer;
+}
+
+.enable-hover.success.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  border-color: #00aa00;
+  color: green;
+}
+
+.enable-hover.warning:hover,
+.enable-hover.warning.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #fabe46;
+  cursor: pointer;
+  color: black;
+}
+
+.enable-hover.warning.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  border-color: #fdd27c;
+  color: #faad14;
+}
+
+.enable-hover.error:hover {
+  background-color: #fd656c;
+  cursor: pointer;
+}
+
+.enable-hover.blackBtn.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #fdfdfd;
+  color: #4d4d4d;
+  border-color: #9c9c9c;
+}
+
+.enable-hover.grayBtn.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  background-color: #fdfdfd;
+  color: #4d4d4d;
+  border-color: #9c9c9c;
+}
