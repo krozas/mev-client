@@ -23,7 +23,7 @@ export default function FueroComboBox(props: Readonly<SelectProps>) {
         options={options}
         showSearch
         allowClear
-        placeholder="Seleccione un departamento"
+        placeholder="Seleccione un fuero"
        // value={props.value}
         {...props}
       />

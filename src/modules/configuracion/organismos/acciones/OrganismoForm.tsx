@@ -16,7 +16,7 @@ export default function OrganismoForm({
   afterCrud,
 }: Readonly<Props>) {
   const [upsertOrganismo] = useQuery<number>((inputOrganismo: any) =>
-    request("/api/configuracion/fueros/save", inputOrganismo),
+    request("/api/configuracion/organismos/save", inputOrganismo),
   );
 
   const onFinish: FormProps<InputOrganismo>["onFinish"] = async (values) => {
@@ -37,20 +37,6 @@ export default function OrganismoForm({
       scrollToFirstError={true}
       initialValues={input ?? {}}
     >
-      {input?.id && (
-        <Form.Item<InputOrganismo>
-          label="Código"
-          name="codigo"
-          rules={[
-            {
-              required: true,
-              message: "Por favor ingrese el codigo",
-            },
-          ]}
-        >
-          <Input allowClear disabled={true} />
-        </Form.Item>
-      )}
 
       <Form.Item<InputOrganismo>
         label="Nombre"
@@ -58,17 +44,24 @@ export default function OrganismoForm({
         rules={[
           {
             required: true,
-            message: "Por favor ingrese la descripcion",
+            message: "Por favor ingrese el nombre",
           },
         ]}
       >
         <Input allowClear />
       </Form.Item>
+     <Form.Item<InputOrganismo>
+        label="Caratula"
+        name="caratula"
+       
+      >
+        <Input allowClear />
+      </Form.Item>
      
-      <Form.Item<InputOrganismo> label="Ciudad" name="idCiudad">
+      <Form.Item<InputOrganismo> label="Ciudad" name="idCiudad" required>
         <CiudadComboBox style={{ width: "100%" }} />
       </Form.Item>
-       <Form.Item<InputOrganismo> name="idFuero" label="Fuero">
+       <Form.Item<InputOrganismo> name="idFuero" label="Fuero" required>
         <FueroComboBox style={{ width: "100%" }} />
       </Form.Item>
       <Flex gap="middle" justify="flex-end">

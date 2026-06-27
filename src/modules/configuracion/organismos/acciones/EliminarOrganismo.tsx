@@ -22,7 +22,7 @@ export default function EliminarOrganismo({
   afterCrud,
 }: Readonly<Props>) {
     const [eliminar] = useQuery<number>((idOrganismo: number) =>
-      request("/api/configuracion/fueros/delete", { id: idOrganismo })
+      request("/api/configuracion/organismos/delete", { id: idOrganismo })
     );
     const handleEliminar = async () => {
       try {
